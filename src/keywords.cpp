@@ -146,7 +146,7 @@ static const chunk_tag_t keywords[] =
    { "float",            CT_TYPE,         LANG_ALLC                                                                   },
    { "for",              CT_FOR,          LANG_ALL                                                                    }, // PAWN
    { "for_each",         CT_FOR,          LANG_CPP                                                                    },
-   { "foreach",          CT_FOR,          LANG_CS | LANG_D | LANG_VALA                                                },
+   { "foreach",          CT_FOR,          LANG_CPP| LANG_CS | LANG_D | LANG_VALA                                      },
    { "foreach_reverse",  CT_FOR,          LANG_D                                                                      },
    { "forward",          CT_FORWARD,      LANG_PAWN                                                                   }, // PAWN
    { "friend",           CT_FRIEND,       LANG_CPP                                                                    },
@@ -194,7 +194,7 @@ static const chunk_tag_t keywords[] =
    { "or",               CT_SBOOL,        LANG_C | LANG_CPP | FLAG_PP                                                 },
    { "or_eq",            CT_SASSIGN,      LANG_C | LANG_CPP                                                           },
    { "out",              CT_QUALIFIER,    LANG_CS | LANG_D | LANG_VALA                                                },
-   { "override",         CT_QUALIFIER,    LANG_CS | LANG_D | LANG_VALA                                                },
+   { "override",         CT_QUALIFIER,    LANG_CPP | LANG_CS | LANG_D | LANG_VALA                                     },
    { "package",          CT_PRIVATE,      LANG_D                                                                      },
    { "package",          CT_PACKAGE,      LANG_ECMA | LANG_JAVA                                                       },
    { "params",           CT_TYPE,         LANG_CS | LANG_VALA                                                         },
@@ -223,6 +223,7 @@ static const chunk_tag_t keywords[] =
    { "signed",           CT_TYPE,         LANG_C | LANG_CPP                                                           },
    { "sizeof",           CT_SIZEOF,       LANG_C | LANG_CPP | LANG_CS | LANG_VALA | LANG_PAWN                         }, // PAWN
    { "sleep",            CT_SIZEOF,       LANG_PAWN                                                                   }, // PAWN
+   { "slots",            CT_PRIVATE,      LANG_CPP                                                                    },
    { "stackalloc",       CT_NEW,          LANG_CS                                                                     },
    { "state",            CT_STATE,        LANG_PAWN                                                                   }, // PAWN
    { "static",           CT_QUALIFIER,    LANG_ALL                                                                    }, // PAWN
